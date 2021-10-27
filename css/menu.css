@@ -1,0 +1,53 @@
+.menu {
+    text-align: center;
+
+}
+
+div a, .dropbtn {
+    display:block;                /* Transformation en block */
+    min-width: 400px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: white;    /* Arrière-plan */
+    color: black;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 2px solid black;       /* Ajout d'une bordure */
+    border-radius: 10px;           /* Arrondis des bordures */
+    transition: all 0.2s ;          /* Ajout des effets de transition */
+    box-shadow: 2px 2px 0.5px black;
+}
+
+
+.menu a:hover, .dropbtn:hover {
+    box-shadow: inset 2px 2px black;
+    background-color: #662b2d;
+    color: white;
+    font-weight: bold;
+}
+
+
+.dropdown-content {
+    visibility: hidden;
+    display: none;
+
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    letter-spacing: -1px;
+    background-color: white;
+    border-radius: 2.2%;
+    padding-bottom: 5px;
+    border: solid black 2px;
+}
+
+
+nav {
+    margin-bottom: 80px;
+}

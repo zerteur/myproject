@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+	text-decoration: none;
+	list-style: none;
+	color: black;
+	transition: 0.2s;
+
+}
+
+
+.logo-menu, h2 {
+	background-color: #662b2d;
+	border: black solid 5px;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+
+}
+
+.logo-menu {
+	height: 150px;
+}
+
+.text-menu, h2 {
+	font-family: Damion, sans-serif;
+	color: white;
+	text-shadow: black 2px 2px 2px;
+}
+
+
+.headerblock {
+	top: 0;
+	border: black solid 5px;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	background-color:  #662b2d;
+	margin-bottom: 20px;
+
+
+}
+
+nav {
+	height: 50px;
+	max-height: 100px;
+	position: relative;
+	max-width: 100%;
+}
+
+h3, li {
+	font-family: Raleway, sans-serif;
+	text-align: center;
+}
+
+article {
+	margin-bottom: -400px;
+}
+
+main img {
+	border: solid black 4px;
+	border-radius: 25%;
+}
+
+table {
+	text-align: center;
+}
+
+* article img {
+	display: none;
+	visibility: hidden;
+}
+
+article:hover img, article:hover {
+	display: block;
+	visibility: visible;
+	margin-bottom: 10px;
+}
