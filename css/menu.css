@@ -51,3 +51,9 @@ div a, .dropbtn {
 nav {
     margin-bottom: 80px;
 }
+
+.cheese:hover img, .cheese:hover {
+    display: block;
+    visibility: visible;
+    margin-bottom: 10px;
+}

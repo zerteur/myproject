@@ -6,6 +6,7 @@
 	list-style: none;
 	color: black;
 	transition: 0.2s;
+	
 
 }
 
@@ -72,8 +73,5 @@ table {
 	visibility: hidden;
 }
 
-article:hover img, article:hover {
-	display: block;
-	visibility: visible;
-	margin-bottom: 10px;
-}
+
+
