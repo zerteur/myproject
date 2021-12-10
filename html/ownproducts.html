@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/menu.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script type="text/javascript" src="../js/quizz.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,7 @@
     					<a href="../html/cheese.html">Fromages</a>
     					<a href="../html/price.html">Prix</a>
     					<a href="../html/ownproducts.html">Nos Produits</a>
+    					<a href="../html/memo.html">Mémo</a>
   					</div>
 				</div> 
 				<div class="col-lg-4 col-xs-12"><a href="../html/theme.html">Qui Somme Nous ?</a></div>
@@ -35,45 +37,49 @@
 
 
 <main>    <!-- Systeme de h2 pour indiquer le titre ainsi que de label pour indiquer les choix et les boutons radio pour valider les choix -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-sm-12 col-xs-12">
+				<h2>Quizz 1</h2>
+				<h3>Quel est le fromage qui est à pâte dur ?</h3>
+				<select id="quizz" class="form-select" aria-label="Default select example">
+				  <option selected>Choisir une réponse : </option>
+				  <option value="beaufort">Beaufort</option>
+				  <option value="mozza">Mozzarella</option>
+				  <option value="brie">P'tit Brie</option>
+				</select><br>
+				<button class="btn btn-submit btn-lg" onclick="validation()">Verifier</button>
+				
+			</div>
 
-	<h2>Pâte Dur</h2>
-	<div class="question1">
+			<div class="col-lg-6 col-sm-12 col-xs-12">
+				<h2>Quizz 2</h2>
+				<h3>Trouver L'intru !</h3>
+				<div class="question1">
 
-		<div>
-  			<input type="radio" id="rape" name="q1" value="false">
-  			<label for="rape">Emmentale</label>
+					<div>
+			  			<input type="radio" id="rape" name="q1" value="false">
+			  			<label for="rape">Emmentale</label>
+					</div>
+
+					<div>
+			  			<input type="radio" id="agur" name="q1" value="false">
+			  			<label for="agur">Crème St Agur</label>
+					</div>
+
+					<div>
+			  			<input type="radio" id="parmesan" name="q1" value="false">
+			  			<label for="parmesan">Parmesan</label>
+					</div>
+
+			</div>
+			
 		</div>
-
-		<div>
-  			<input type="radio" id="comte" name="q1" value="false">
-  			<label for="comte">Comté</label>
-		</div>
-
-		<div>
-  			<input type="radio" id="parmesan" name="q1" value="false">
-  			<label for="parmesan">Parmesan</label>
-		</div>
-
-	<h2>Pâte Molle</h2>
-	<div class="question2">
-
-		<div>
-  			<input type="radio" id="mozza" name="q2" value="false">
-  			<label for="mozza">Mozzarella</label>
-		</div>
-
-		<div>
-  			<input type="radio" id="faisselle" name="q2" value="false">
-  			<label for="faisselle">Faisselle</label>
-		</div>
-
-		<div>
-  			<input type="radio" id="chèvre" name="q2" value="false">
-  			<label for="chèvre">Chèvre Frais</label>
-		</div>
+		
+	</div>
 
 </main>
-	<input type="submit" name="envoyer"> <!-- INDICATION AU SITE POUR LENVOYER  -->
+
 
 
 </body>

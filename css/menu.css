@@ -3,7 +3,7 @@
 
 }
 
-div a, .dropbtn {
+div a, .dropbtn, .btn-submit, .contactus {
     display:block;                /* Transformation en block */
     min-width: 400px;             /* Largeur minimale des liens */   
     
@@ -20,7 +20,7 @@ div a, .dropbtn {
 }
 
 
-.menu a:hover, .dropbtn:hover {
+.menu a:hover, .dropbtn:hover, .btn-submit:hover, .contactus:hover {
     box-shadow: inset 2px 2px black;
     background-color: #662b2d;
     color: white;
