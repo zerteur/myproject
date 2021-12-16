@@ -1,16 +1,5 @@
-document.getElementById("quizz1").style.visibility = "hidden";
-document.getElementById("quizz2").style.visibility = "hidden";
-document.getElementById("quizz3").style.visibility = "hidden";
-
-document.getElementById("quizz4").style.visibility = "hidden";
-document.getElementById("quizz5").style.visibility = "hidden";
-document.getElementById("quizz6").style.visibility = "hidden";
-
-document.getElementById("quizz7").style.visibility = "hidden";
-document.getElementById("quizz8").style.visibility = "hidden";
-document.getElementById("quizz9").style.visibility = "hidden";
-
-function hide()
+var note = 0; var pts = 0;
+function hide() // Cache les images affiche le questionnaire
 {
 
   document.getElementById("1").src = "../assets/img/memo_images/white.png";
@@ -38,7 +27,7 @@ function hide()
   document.getElementById("quizz9").style.visibility = "visible";
 }
 
-function view()
+function view() // Affiche les images et cache le questionnaire
 {
 
   document.getElementById("1").src = "../assets/img/memo_images/GREEN1.jpeg";
@@ -69,7 +58,7 @@ function view()
   
 }
 
-function send()
+function send() // Recolte les reponses des cases et utilise des IF pour voir si il a répondu juste ainsi fait une note basé sur les 3 parti (0/6.6/13.4/20) pas dautre notes possible.
 {
 
   r1  =  document.getElementById('quizz1').value;
@@ -87,6 +76,7 @@ function send()
   
   if (r1 == 1 & r2 == 2 & r3 == 3) {
     alert("Bravo ! Les couleurs verte sont correct !");
+    pts+=1;
   }
 
   else {
@@ -95,6 +85,7 @@ function send()
 
   if (r4 == 4 & r5 == 5 & r6 == 6) {
     alert("Bravo ! Les couleurs rouge sont correct !");
+    pts+=1;
   }
 
   else {
@@ -103,15 +94,21 @@ function send()
 
   if (r7 == 7 & r8 == 8 & r9 == 9) {
     alert("Bravo ! Les couleurs bleu sont correct !");
+    pts+=1;
   }
 
   else {
     alert("Bleu pas bon :/")
   }
+  note= Math.round((pts / 3) * 100) / 100;  //ARONDIS LA NOTE POUR EVITER DE LIRE AU DELA DU CENTIEME
+  note= Math.round((note*20) * 100) / 100;
+  alert("Votre note pour l'instant est de : " + note + " sur 20");
+  pts=0;
+  note=0;
 
 }
 
-function reset() 
+function reset()  // Renitialise le quiz du début.
 {
                                                                                                     
 document.getElementById('quizz1').value =  0;
